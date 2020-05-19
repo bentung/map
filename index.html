@@ -44,6 +44,10 @@ var map = new AMap.Map('container', {
     zoom: 4
 });
 
+var toolBar = new AMap.ToolBar({visible: true});
+    
+map.addControl(toolBar);
+
 AMapUI.loadUI(['overlay/SimpleInfoWindow'], function(SimpleInfoWindow) {
 
     var marker = new AMap.Marker({
